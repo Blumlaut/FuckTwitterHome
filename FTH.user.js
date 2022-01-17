@@ -27,8 +27,8 @@
             setTimeout(findStupidFuckingAlgoToggle, 5000)
             currentTry=+1
         } else {
-            // find this stupid fucking button
             timelineModeButton.click()
+            
             function fuckingToggleTimeline() {
                 var stupidFuckingToggleButton = document.querySelectorAll('[role="menuitem"]')[0]
                 console.log(stupidFuckingToggleButton)
@@ -45,8 +45,4 @@
     }
     setTimeout(findStupidFuckingAlgoToggle, 3000)
 
-
-
-
-    // Your code here...
 })();
