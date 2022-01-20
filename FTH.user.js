@@ -18,20 +18,18 @@
 
     function findStupidFuckingAlgoToggle() {
         if (currentTry==3) {
-            console.log("looks like the algo spared us.. or i broke, fuck you @twitter, in that case.")
+            console.log("looks like the algo spared us...")
             return
         }
         var timelineModeButton = document.querySelector('[aria-label="Top Tweets on"]')
-        console.log(timelineModeButton)
         if (!timelineModeButton) {
             setTimeout(findStupidFuckingAlgoToggle, 5000)
-            currentTry=+1
+            currentTry++
         } else {
             timelineModeButton.click()
             
             function fuckingToggleTimeline() {
                 var stupidFuckingToggleButton = document.querySelectorAll('[role="menuitem"]')[0]
-                console.log(stupidFuckingToggleButton)
                 if (!stupidFuckingToggleButton) {
                     setTimeout(fuckingToggleTimeline, 100)
                 } else {
