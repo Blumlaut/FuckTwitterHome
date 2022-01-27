@@ -3,10 +3,10 @@
 // @namespace    http://tampermonkey.net/
 // @description  FuckTwitterHome - Automatically disables Algorithmic Timeline in favour of latest tweets first.
 // @author       Blumlaut
-// @match        https://twitter.com/home
+// @match        https://twitter.com/*
 // @icon         https://www.google.com/s2/favicons?domain=twitter.com
 // @grant        none
-// @version      1.0.0
+// @version      1.0.1
 // @updateURL https://raw.githubusercontent.com/Blumlaut/FuckTwitterHome/main/FTH.user.js
 // @downloadURL https://raw.githubusercontent.com/Blumlaut/FuckTwitterHome/main/FTH.user.js
 // ==/UserScript==
