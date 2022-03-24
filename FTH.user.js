@@ -6,7 +6,7 @@
 // @match        https://twitter.com/*
 // @icon         https://www.google.com/s2/favicons?domain=twitter.com
 // @grant        none
-// @version      1.0.1
+// @version      1.0.2
 // @updateURL https://raw.githubusercontent.com/Blumlaut/FuckTwitterHome/main/FTH.user.js
 // @downloadURL https://raw.githubusercontent.com/Blumlaut/FuckTwitterHome/main/FTH.user.js
 // ==/UserScript==
@@ -21,6 +21,12 @@
             console.log("looks like the algo spared us...")
             return
         }
+        
+        var communitiesButton = document.querySelector('[aria-label="Communities"]')
+        if (communitiesButton) {
+            communitiesButton.remove()
+        }
+        
         var timelineModeButton = document.querySelector('[aria-label="Top Tweets on"]')
         if (!timelineModeButton) {
             setTimeout(findStupidFuckingAlgoToggle, 5000)
